@@ -67,3 +67,5 @@ elif args.list:
     else:
         for name, details in tasks.items():
             print(f'Task: {name}, Description: {details["description"]}, Priority: {details["priority"]}, Status: {details["status"]}')
+else:
+    parser.print_help()
